@@ -1,0 +1,126 @@
+[
+    {
+        "intro": {
+            "name": null,
+            "pronouns": null,
+            "works_at": "Data Engineering & Analytics",
+            "location": "Rabat, Rabat-Sal\u00e9-K\u00e9nitra, Maroc",
+            "followers": null,
+            "connections": "Plus de 500"
+        },
+        "about": {
+            "about_description": ""
+        },
+        "experience": [
+            {
+                "job_title": null,
+                "company_name": null,
+                "dates": null,
+                "location": null
+            },
+            {
+                "job_title": "Data Engineer",
+                "company_name": "Freelance",
+                "dates": null,
+                "location": null
+            },
+            {
+                "job_title": null,
+                "company_name": null,
+                "dates": null,
+                "location": null
+            },
+            {
+                "job_title": "Atlas Devshop",
+                "company_name": "9 mois",
+                "dates": null,
+                "location": null
+            },
+            {
+                "job_title": null,
+                "company_name": null,
+                "dates": null,
+                "location": null
+            },
+            {
+                "job_title": "Data Analyst",
+                "company_name": "CASH PLUS \u00b7 Stage",
+                "dates": null,
+                "location": null
+            },
+            {
+                "job_title": null,
+                "company_name": null,
+                "dates": null,
+                "location": null
+            },
+            {
+                "job_title": "Virtualization Engineer Intern",
+                "company_name": "OCP Group \u00b7 Stage",
+                "dates": null,
+                "location": null
+            },
+            {
+                "job_title": null,
+                "company_name": null,
+                "dates": null,
+                "location": null
+            },
+            {
+                "job_title": "Technocolabs Softwares",
+                "company_name": "Stage \u00b7 3 mois",
+                "dates": null,
+                "location": null
+            }
+        ],
+        "education": [
+            {
+                "institution": "Ecole Nationale Sup\u00e9rieure d'Informatique et d'Analyse des Syst\u00e8mes - ENSIAS",
+                "degree_field": "Engineer's degree, data science and IOT \nEngineer's degree, data science and IOT",
+                "graduation_year": "2021 - 2025"
+            },
+            {
+                "institution": "Lyc\u00e9e Moulay Abdellah - CENTRE CPGE",
+                "degree_field": "Physique et math\u00e9matique\nPhysique et math\u00e9matique",
+                "graduation_year": null
+            }
+        ],
+        "certificates": [
+            {
+                "cert_name": "L'essentiel d'Apache PySpark",
+                "issuer": "LinkedIn",
+                "issue_date": "Date de d\u00e9livrance : juin 2025",
+                "credential_url": "https://www.linkedin.com/learning/certificates/858bc98a5bc6a1b7cd2e6bb726a9a421e9a2c2b16115f04fc097b57f63dc6a52"
+            }
+        ],
+        "projects": [
+            {
+                "project_title": "Options Pricing",
+                "dates": "avr. 2024 - mai 2024\navr. 2024 - mai 2024",
+                "organization": null,
+                "description": "Options Pricing",
+                "link": null
+            },
+            {
+                "project_title": "Development of a Data Pipeline for Automated Extraction, Analysis and Visualization",
+                "dates": "oct. 2023 - janv. 2024\noct. 2023 - janv. 2024",
+                "organization": null,
+                "description": "Development of a Data Pipeline for Automated Extraction, Analysis and Visualization",
+                "link": "https://www.linkedin.com/in/salma-benkama-886723241/overlay/1730895833560/single-media-viewer?type=DOCUMENT&profileId=ACoAADwV3yYBQplnJaIeb8jE7eJ0JP2ObULcxLc"
+            }
+        ],
+        "volunteering": [],
+        "skills": [
+            {
+                "title": "SerpApi",
+                "endorsements": null
+            },
+            {
+                "title": "Talend Open Studio",
+                "endorsements": null
+            }
+        ],
+        "honors": [],
+        "organizations": []
+    }
+]
