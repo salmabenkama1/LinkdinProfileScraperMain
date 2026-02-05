@@ -1,0 +1,69 @@
+import json
+import pandas as pd
+import numpy as np
+import os
+
+# Path to JSON file
+json_file = r"C:\Users\Salma.BENKAMA\Desktop\linkedin-profile-scraper-master\data\scraped_profiles.json"
+
+# Directory where JSON is located
+data_dir = os.path.dirname(json_file)
+
+# Your LinkedIn profile links (same order as JSON)
+profile_links = [
+    "https://ma.linkedin.com/in/brahimzaid",
+    "https://uk.linkedin.com/in/youssef-bouyakhf",
+    "https://ma.linkedin.com/in/abdelbassite-badou",
+    "https://ae.linkedin.com/in/omar-el-kouhene-981b0412/en",
+    "https://www.linkedin.com/in/mohamedbenmansour",
+    "https://ma.linkedin.com/in/nouredine-amrani-76b1ba28",
+    "https://www.linkedin.com/in/lmodirdotcom/",
+    "https://www.linkedin.com/in/omaralalami",
+    "https://fr.linkedin.com/in/driss-jabar-24b13448",
+    "https://ma.linkedin.com/in/simo-zizi-5599b944",
+    "https://www.linkedin.com/in/rachidbaaziz",
+    "https://ma.linkedin.com/in/mahabennani",
+    "https://ma.linkedin.com/in/belkhayat"
+]
+
+# Load JSON
+with open(json_file, 'r', encoding='utf-8') as f:
+    data = json.load(f)
+
+rows = []
+
+# Iterate through each profile
+for link, profile in zip(profile_links, data):
+    experiences = profile.get('experience', [])
+    
+    # If no experiences, still make a row with NaN
+    if not experiences:
+        rows.append({
+            'linkedin_url': link,
+            'job_title': np.nan,
+            'company_name': np.nan,
+            'dates': np.nan,
+            'location': np.nan
+        })
+    else:
+        for exp in experiences:
+            rows.append({
+                'linkedin_url': link,
+                'job_title': exp.get('job_title', np.nan),
+                'company_name': exp.get('company_name', np.nan),
+                'dates': exp.get('dates', np.nan),
+                'location': exp.get('location', np.nan)
+            })
+
+# Create DataFrame
+df = pd.DataFrame(rows)
+
+# Replace None with NaN safely
+df = df.where(pd.notnull(df), np.nan)
+
+# Save CSV in the same directory as JSON
+csv_file = os.path.join(data_dir, "linkedin_experiences.csv")
+df.to_csv(csv_file, index=False)
+
+print(f"DataFrame saved to {csv_file}")
+print(df.head(20))
